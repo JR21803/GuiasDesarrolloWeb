@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 20px;
+}
+
+header{
+    text-align: center;
+    color: #ffff;
+    background-color: #00ABE4;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+header > h1{
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+
+nav#indice{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav#indice span a{
+    color: #B1D0E0;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+nav#indice span a:hover{
+    background-color: #8AB6D6;
+
+}
+
+
+body{
+    background-color: #E9F1FA;
+    color: #333;
+    font-family: "Epunda Slab", serif;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+section{
+   margin: 10px 0;
+   background-color: #96C2DB;
+   box-shadow: 1px 1px 15px 5px #000000;
+   border-radius: 10px;
+}
+section article{
+    padding: 1.5rem;
+}
+
+section p{
+    text-align: justify;
+    font-size: 1rem;
+}
+
+section h2{
+    margin-bottom: 0rem;
+    border-bottom: 2px;
+}
+
+section h2 + p::first-letter{
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #113F67;
+}
+
+
+section article a:link{
+    color: #0B2F9F;
+
+}
+section article a:visited{ 
+    color: #461959;
+}
+
+.Imagen{
+    text-align: center;
+    margin: 1.5rem;
+}
+
+#introduccion .Imagen img{
+    max-width: 25%;
+}
+
+
+#vidaestudiantil article .Imagen:nth-of-type(3):hover img{
+    max-width: 80%;
+}
+
+
+#experiencias article .Imagen:last-of-type img{
+    max-width: 35%;
+}
+
+#expereincias article p:first-of-type::first-line{
+    font-weight: bold;
+}
+
+
+.Imagen img{
+    box-shadow: 1px 1px 15px 5px #000000;
+    border-radius: 10px;
+    max-width: 50%;
+    height: auto;
+}
+
+footer{
+    text-align: center;
+    color: #ffff;
+    background-color: #00ABE4;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
