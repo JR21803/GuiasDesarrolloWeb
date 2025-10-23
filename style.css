@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    font-family: "Epunda Slab", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #4A8BDF;
+    background-color:#EFFAFD ; /*#A0006D*/
+}
+
+.contenedor{
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header{
+    background-color: #FDF8F0;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    color: black; 
+}
+
+.contenedor-header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header p{
+    max-width: 800px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+header h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor-materia{
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffff;
+    border-radius: 5px;
+}
+
+
+.contenedor-materia h2{
+    margin-bottom: 1rem;
+}
+
+.contenedor-materia h3{
+    margin: 1rem 0 0.5rem 0;
+}
+
+
+.guia {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ffff;
+    border-radius: 5px;
+}
+
+.guia h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.guia p{
+    font-size: 1rem;
+    max-width: 800px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+section{
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    background-color: #ffff;
+    border-radius: 5px;
+}
+
+section h2{
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #A0006D;
+}
+
+.enlaces{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.enlaces li{
+    background-color:#A0006D ;
+    border-radius: 5px;
+}
+
+.enlaces a{
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.enlaces li:hover{
+    background-color: #1D63FF;
+}
+
+.foda{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.foda h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.Fortalezas, .Oportunidades, .Debilidades, .Amenazas{
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border-left: 4px solid;
+}
+
+.Fortalezas{
+    background-color: #ef7c8e;
+    border-left: 4px;
+    color: black;
+    width: 23.5%;
+}
+
+.Oportunidades{
+    background-color: #dfde65;
+    border-left: 4px;
+    color: black;
+    width: 23.5%;
+}
+
+.Amenazas{
+    background-color: #b6e2d3;
+    border-left: 4px;
+    color: black;
+    width: 23.5%;
+}
+
+.Debilidades{
+    background-color: #feedaa;
+    border-left: 4px;
+    color: black;
+    width: 23.5%;
+}
+
+footer{
+    background-color: #ffff;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+table{
+    width: 100%;
+    border: 3px solid #A0006D;
+    border-radius: 5px;
+}
+
+th, td{
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid black;
+}
+
+@media (max-width: 480px){
+    .contenedor{
+        padding: 1 rem;
+        gap: 1rem;
+    }
+
+    header{
+        background-color: #6ACFC7;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    header h2{
+        font-size: 1.5rem;
+    }
+
+    header p{
+        font-size: 1rem;
+    }
+
+    .foda{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Fortalezas, .Oportunidades, .Debilidades, .Amenazas{
+        width: 100%;
+    }
+
+    .table{
+        font-size: 0.5rem;
+    }
+
+    th,td{
+        padding: 0.5rem;
+    }
+
+    .enlaces{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media (min-width: 481px) and (max-width:768px){
+    
+    body{
+    color: #4A8BDF;
+    background-color:#B2B5E0; /*#A0006D*/
+}
+
+    header{
+        background-color: #6ACFC7;
+    }
+    
+    .foda{
+        gap: 1rem;
+    }
+
+    .contenedor{
+        padding: 0 1.5rem;
+    }
+
+    .Fortalezas, .Oportunidades, .Debilidades, .Amenazas{
+        width: 45%;
+    }
+
+    .enlaces{
+        justify-content: center;
+    }
+}
