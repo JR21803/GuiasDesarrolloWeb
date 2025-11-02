@@ -16,7 +16,7 @@ function calcularFactorial(numero){
 }
 
 const imprimir = (numero, resultado) => {
-    const contenedor = document.getElementById("idDiviResultado");
+    const contenedor = document.getElementById("idDivResultado");
     contenedor.innerHTML = `El factorial de ${numero}! es ${resultado}`;
 }
 
